@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Josefin+Sans&family=Oleo+Script&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="name">
+            TIC-TAC-TOE
+        </div>
+    </nav>
+    <div class="p1x">
+        PLAYER 1 - &nbsp; X
+    </div>
+    <div class="visibility_h dance">
+        <div class="rabbie">
+            <div class="win_text">Player 1 Won!!</div>
+            <img src="/Images/winner_gid.gif" width="200px">
+        </div>
+    </div>
+    <div class="main_box">
+        <div class="row1">
+            <div class="block"><button class="block1" onclick="toggle(1)"></button></div>
+            <div class="block"><button class="block2" onclick="toggle(2)"></button></div>
+            <div class="block"><button class="block3" onclick="toggle(3)"></button></div>
+        </div>
+        <div class="row2">
+            <div class="block"><button class="block4" onclick="toggle(4)"></button></div>
+            <div class="block"><button class="block5" onclick="toggle(5)"></button></div>
+            <div class="block"><button class="block6" onclick="toggle(6)"></button></div>
+        </div>
+        <div class="row3">
+            <div class="block"><button class="block7" onclick="toggle(7)"></button></div>
+            <div class="block"><button class="block8" onclick="toggle(8)"></button></div>
+            <div class="block"><button class="block9" onclick="toggle(9)"></button></div>
+        </div>
+    </div>
+    <div class="p2o">
+        PLAYER 2 - &nbsp; O
+    </div>
+    <script src="/logic.js"></script>
+</body>
+</html>

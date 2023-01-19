@@ -1,0 +1,139 @@
+*{
+    margin: 0px;
+}
+nav{
+    height: 75px;
+    background-image: linear-gradient(to bottom right,#1f2431,#040915);
+}
+.name{
+    padding: 18px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0%);
+    color: skyblue;
+    font-weight: 600;
+    font-size: 28px;
+    font-family: 'Roboto Slab', serif;
+}
+.p1x{
+    position: absolute;
+    top: 40%;
+    left: 16%;
+    padding: 18px 16px 16px 16px;
+    height: 16px;
+    width: 150px;
+    background-color: #040915;
+    text-align: center;
+    border: 6px solid rgb(70, 70, 70);
+    border-bottom: 6px solid rgb(141, 141, 141);
+    border-radius: 8px;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    color: rgb(255, 136, 0);
+}
+.p2o{
+    position: absolute;
+    top: 40%;
+    right: 16%;
+    padding: 18px 16px 16px 16px;
+    height: 16px;
+    width: 150px;
+    background-color: #040915;
+    text-align: center;
+    border: 6px solid rgb(70, 70, 70);
+    border-bottom: 6px solid rgb(141, 141, 141);
+    border-radius: 8px;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    color: rgb(255, 136, 0);
+}
+.main_box{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(20,189,172);
+    height: 350px;
+    width: 350px;
+    border-radius: 18px;
+    padding: 20px 10px 0px 10px;
+    border-right: 7px solid rgb(62, 130, 122);
+    border-top: 7px solid rgb(62, 130, 122);
+    border-left: 7px solid rgb(7, 57, 52);
+    border-bottom: 7px solid rgb(7, 57, 52);
+}
+.row1,.row2,.row3{
+    display: inline-flex;
+    margin: 0px 10px 0px 10px;
+}
+.block{
+    position: relative;
+    align-items: center;
+    background: radial-gradient(rgb(16, 151, 138), rgb(42, 125, 117));
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    border-radius: 5px;
+}
+button{
+    height: 100px;
+    width: 100px;
+    border: none;
+    padding: 0px;
+    background: none;
+}
+.x{
+    background-image:url(/Images/X.png);
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    background-size: 85%;
+    background-position-x: center;
+    background-position-y: center;
+}
+.o{
+    background-image:url(/Images/O.png);
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    background-size: 90%;
+    background-position-x: center;
+    background-position-y: center;
+}
+.dance{
+    overflow: hidden;
+    height: 150px;
+    position: absolute;
+    top: 33%;
+    width: 100%;
+    background-color: rgb(255, 0, 72);
+    z-index: 1;
+    display: inline-flex;
+}
+.win_text{
+    font-family: 'Oleo Script', cursive;
+    display: flex;
+    overflow: hidden;
+    width: 345px;
+    padding-top: 40px;
+    font-size: 60px;
+}
+.rabbie{
+    left: 4%;
+    display: flex;
+    position: absolute;
+    animation: slider 10s ease 0s 1 alternate both;
+}
+@keyframes slider{
+    0%{
+        left: -30%;
+    }
+    100%{
+        left: 120%;
+    }
+}
+.visibility_h{
+    visibility: hidden;
+}
