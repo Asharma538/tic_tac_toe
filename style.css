@@ -78,6 +78,7 @@ nav{
     border-radius: 5px;
 }
 button{
+    cursor: pointer;
     height: 100px;
     width: 100px;
     border: none;
@@ -124,16 +125,4 @@ button{
     left: 4%;
     display: flex;
     position: absolute;
-    animation: slider 10s ease 0s 1 alternate both;
-}
-@keyframes slider{
-    0%{
-        left: -30%;
-    }
-    100%{
-        left: 120%;
-    }
-}
-.visibility_h{
-    visibility: hidden;
 }
