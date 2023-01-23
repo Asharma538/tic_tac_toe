@@ -37,14 +37,19 @@ function main(){
     if ( i<9 || a==1 || a==0 ){
         if (a==0){
             console.log("Player 1 won");
+            document.getElementById("wonWho").innerText = "Player-1 Won ! ";
         }
         else if (a==1){
             console.log("Player 2 won");
+            document.getElementById("wonWho").innerText = "Player-2 Won !";
+
         }
     }
     else{
         console.log("Draw!");
+        document.getElementById("wonWho").innerText = "Match draw !";
     }
+
 }
 
 function toggle(a){
