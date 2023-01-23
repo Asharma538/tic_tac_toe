@@ -195,5 +195,5 @@ function toggle(a){
         }
     }
     main();
-    // console.log(board);
+    console.log(classFilled);
 }
