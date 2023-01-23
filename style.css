@@ -2,21 +2,13 @@
     margin: 0px;
 }
 body {
-    background-image: url(/Images/Blocks1.jpeg);
+    background-image: url(/Images/Blocks.jpeg);
     background-repeat: no-repeat;
     background-size: 100%;
-    background-size: cover;
 }
 nav{
     height: 75px;
     background-image: linear-gradient(to bottom right,#1f2431,#040915);
-}
-
-body{
-    background-image: url('Images/bg1.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
 }
 
 .name{
@@ -28,6 +20,24 @@ body{
     font-weight: 600;
     font-size: 28px;
     font-family: 'Roboto Slab', serif;
+}
+.wp1{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    transform: translate(0px,70px);
+    font-size: 20px;
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 600;
+}
+.wp2{
+    position: absolute;
+    top: 40%;
+    right: 20%;
+    transform: translate(0px,70px);
+    font-size: 20px;
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 600;
 }
 .p1x{
     position: absolute;
@@ -144,18 +154,9 @@ button{
 
 .gif{
     position: absolute;
-    top: 70%;
-    left: 25%;
-    /* height : 100px; */
-    /* background-color: antiquewhite; */
-}
-
-.gif img{
-    top: 70%;
-    left: 25%;
-    /* background-color: rgb(247, 246, 245); */
-    
-    /* height : 100px; */
+    top: 39%;
+    left: 47%;
+    transform: translate(-50%,0%);
 }
 
 .gif p{
@@ -163,8 +164,36 @@ button{
     top: 50%;
     font-size: 30px;
     font-weight: bold;
-    left: 80%;
+    left: 68%;
     width: 250px;
     font-family: Arial, Helvetica, sans-serif;
 
+}
+.invisible{
+    visibility: hidden;
+}
+.reiniBtn{
+    position: absolute;
+    top: 38px;
+    left: 97%;
+    transform: translate(-50%,-50%);
+    background-color: #1f2431;
+    border-radius: 50%;
+    width:  48px;
+    height: 48px;
+    background-image: url(/Images/restart.png);
+    background-size: 100%;
+}
+.reiniBtn:active{
+    filter: contrast(0.8);
+}
+.reset{
+    position: absolute;
+    top: 38px;
+    transform: translate(-50%,-50%);
+    left: 92%;
+    font-size: 18px;
+    color: aliceblue;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 900;
 }

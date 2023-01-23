@@ -1,7 +1,18 @@
-const board = [[-1,-1,-1],[-1,-1,-1],[-1,-1,-1]];
+var board = [[-1,-1,-1],[-1,-1,-1],[-1,-1,-1]];
+var classFilled = [[-1,-1,-1],[-1,-1,-1],[-1,-1,-1]];
 var i=0;
 function reinitiate(){
+    document.getElementsByClassName("block1")[0].classList.toggle(classFilled[0][0]);
+    document.getElementsByClassName("block2")[0].classList.toggle(classFilled[0][1]);
+    document.getElementsByClassName("block3")[0].classList.toggle(classFilled[0][2]);
+    document.getElementsByClassName("block4")[0].classList.toggle(classFilled[1][0]);
+    document.getElementsByClassName("block5")[0].classList.toggle(classFilled[1][1]);
+    document.getElementsByClassName("block6")[0].classList.toggle(classFilled[1][2]);
+    document.getElementsByClassName("block7")[0].classList.toggle(classFilled[2][0]);
+    document.getElementsByClassName("block8")[0].classList.toggle(classFilled[2][1]);
+    document.getElementsByClassName("block9")[0].classList.toggle(classFilled[2][2]);
     board = [[-1,-1,-1],[-1,-1,-1],[-1,-1,-1]];
+    classFilled = [[-1,-1,-1],[-1,-1,-1],[-1,-1,-1]];
     i = 0;
 }
 
@@ -31,23 +42,53 @@ function winner(){
     return -1;
 }
 
-
 function main(){
     var a = winner();
     if ( i<9 || a==1 || a==0 ){
         if (a==0){
-            console.log("Player 1 won");
             document.getElementById("wonWho").innerText = "Player-1 Won ! ";
+            document.getElementsByClassName("gif")[0].classList.toggle("invisible");
+            document.getElementById("tic-tac-toe").classList.toggle("invisible");
+            document.getElementById("rabbie").src = "/Images/winner_gid.gif";
+            setTimeout(hide_func1,4000);
+            function hide_func1() {
+                document.getElementById("tic-tac-toe").classList.toggle("invisible");
+                document.getElementsByClassName("gif")[0].classList.toggle("invisible");
+                var w = document.getElementsByClassName("w1")[0].innerText;
+                w = parseInt(w,10);
+                w = w+1
+                document.getElementsByClassName("w1")[0].innerText = w;
+                reinitiate();
+            }
         }
         else if (a==1){
-            console.log("Player 2 won");
             document.getElementById("wonWho").innerText = "Player-2 Won !";
-
+            document.getElementsByClassName("gif")[0].classList.toggle("invisible");
+            document.getElementById("tic-tac-toe").classList.toggle("invisible");
+            document.getElementById("rabbie").src = "/Images/winner_gid.gif";
+            setTimeout(hide_func2,4000);
+            function hide_func2() {
+                document.getElementById("tic-tac-toe").classList.toggle("invisible");
+                document.getElementsByClassName("gif")[0].classList.toggle("invisible");
+                var w = document.getElementsByClassName("w2")[0].innerText;
+                w = parseInt(w,10);
+                w = w+1
+                document.getElementsByClassName("w2")[0].innerText = w;
+                reinitiate();
+            }
         }
     }
     else{
-        console.log("Draw!");
         document.getElementById("wonWho").innerText = "Match draw !";
+        document.getElementsByClassName("gif")[0].classList.toggle("invisible");
+        document.getElementById("tic-tac-toe").classList.toggle("invisible");
+        document.getElementById("rabbie").src = "/Images/draw_gif.png";
+        setTimeout(hide_func3,4000);
+            function hide_func3() {
+                document.getElementById("tic-tac-toe").classList.toggle("invisible");
+                document.getElementsByClassName("gif")[0].classList.toggle("invisible");
+                reinitiate();
+            }
     }
 
 }
@@ -69,6 +110,7 @@ function toggle(a){
             var box = document.getElementsByClassName("block1");
             box[0].classList.toggle(cl);
             board[0][0] = player;
+            classFilled[0][0] =cl;
             i++;
         }
     }
@@ -78,6 +120,7 @@ function toggle(a){
             var box = document.getElementsByClassName("block2");
             box[0].classList.toggle(cl);
             board[0][1] = player;
+            classFilled[0][1] =cl;
             i++;
         }
     }
@@ -87,6 +130,7 @@ function toggle(a){
             var box = document.getElementsByClassName("block3");
             box[0].classList.toggle(cl);
             board[0][2] = player;
+            classFilled[0][2] =cl;
             i++;
         }
     }
@@ -96,6 +140,7 @@ function toggle(a){
             var box = document.getElementsByClassName("block4");
             box[0].classList.toggle(cl);
             board[1][0] = player;
+            classFilled[1][0]=cl;
             i++;
         }
     }
@@ -105,6 +150,7 @@ function toggle(a){
             var box = document.getElementsByClassName("block5");
             box[0].classList.toggle(cl);
             board[1][1] = player;
+            classFilled[1][1]=cl;
             i++;
         }
     }
@@ -114,6 +160,7 @@ function toggle(a){
             var box = document.getElementsByClassName("block6");
             box[0].classList.toggle(cl);
             board[1][2] = player;
+            classFilled[1][2]=cl;
             i++;
         }
     }
@@ -123,6 +170,7 @@ function toggle(a){
             var box = document.getElementsByClassName("block7");
             box[0].classList.toggle(cl);
             board[2][0] = player;
+            classFilled[2][0]=cl;
             i++;
         }
     }
@@ -132,15 +180,17 @@ function toggle(a){
             var box = document.getElementsByClassName("block8");
             box[0].classList.toggle(cl);
             board[2][1] = player;
+            classFilled[2][1]=cl;
             i++;
         }
     }
-    else {
+    else if (a==9){
         if (board[2][2]==-1){
             //console.log("working");
             var box = document.getElementsByClassName("block9");
             box[0].classList.toggle(cl);
             board[2][2] = player;
+            classFilled[2][2]=cl;
             i++;
         }
     }

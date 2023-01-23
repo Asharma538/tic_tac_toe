@@ -24,8 +24,11 @@
     <div class="p1x">
         PLAYER 1 - &nbsp; X
     </div>
+    <div class="wp1">
+        Wins : <span class="w1">0</span>
+    </div>
 
-    <div class="main_box">
+    <div class="main_box" id="tic-tac-toe">
         <div class="row1">
             <div class="block"><button class="block1" onclick="toggle(1)"></button></div>
             <div class="block"><button class="block2" onclick="toggle(2)"></button></div>
@@ -45,15 +48,17 @@
     <div class="p2o">
         PLAYER 2 - &nbsp; O
     </div>
-    <!-- <img src="/Images/birds.png" class="birds" alt=""> -->
+    <div class="wp2">
+        Wins : <span class="w2">0</span>
+    </div>
     <img src="/Images/birds1.png" class="birds1" alt="">
     <img src="/Images/birds2.png" class="birds2" alt="">
-    <div class="gif">
-        <img src="Images/winner_gid.gif" alt="">
-        <!-- <p>Player 1 won !</p> -->
-        <script src="/logic.js"></script>
-        <p id="wonWho"></p>
+    <div class="gif invisible">
+        <img id="rabbie" src="Images/draw_gif.png" alt="">
+        <p id="wonWho">Heya</p>
     </div>
-    <!-- <script src="/logic.js"></script> -->
+    <script src="/logic.js"></script>
+    <div class="reset">RESET</div>
+    <button class="reiniBtn" onclick="reinitiate()"></button>
 </body>
 </html>
