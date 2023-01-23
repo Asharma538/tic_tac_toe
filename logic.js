@@ -48,7 +48,6 @@ function main(){
 }
 
 function toggle(a){
-    //console.log("working");
     var cl = "";
     player = -1;
     if (i%2==0){

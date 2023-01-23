@@ -1,6 +1,12 @@
 *{
     margin: 0px;
 }
+body {
+    background-image: url(/Images/Blocks1.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: cover;
+}
 nav{
     height: 75px;
     background-image: linear-gradient(to bottom right,#1f2431,#040915);
@@ -26,11 +32,34 @@ nav{
     text-align: center;
     border: 6px solid rgb(70, 70, 70);
     border-bottom: 6px solid rgb(141, 141, 141);
+    border-top: 6px solid rgb(141, 141, 141);
     border-radius: 8px;
     font-size: 20px;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 600;
     color: rgb(255, 136, 0);
+}
+.birds1{
+    position: absolute;
+    top: 50%;
+    transform: translate(0px,-270%);
+    left: 36%;
+    width: 120px;
+    transition: 1s;
+}
+.birds1:hover{
+    transform: translate(100px,-270%);
+}
+.birds2{
+    position: absolute;
+    top: 50%;
+    transform: translate(0px,-274%);
+    right: 36%;
+    width: 120px;
+    transition: 1s;
+}
+.birds2:hover{
+    transform: translate(-100px,-274%);
 }
 .p2o{
     position: absolute;
@@ -43,6 +72,7 @@ nav{
     text-align: center;
     border: 6px solid rgb(70, 70, 70);
     border-bottom: 6px solid rgb(141, 141, 141);
+    border-top: 6px solid rgb(141, 141, 141);
     border-radius: 8px;
     font-size: 20px;
     font-family: 'Josefin Sans', sans-serif;
@@ -102,27 +132,4 @@ button{
     background-size: 90%;
     background-position-x: center;
     background-position-y: center;
-}
-.dance{
-    overflow: hidden;
-    height: 150px;
-    position: absolute;
-    top: 33%;
-    width: 100%;
-    background-color: rgb(255, 0, 72);
-    z-index: 1;
-    display: inline-flex;
-}
-.win_text{
-    font-family: 'Oleo Script', cursive;
-    display: flex;
-    overflow: hidden;
-    width: 345px;
-    padding-top: 40px;
-    font-size: 60px;
-}
-.rabbie{
-    left: 4%;
-    display: flex;
-    position: absolute;
 }
