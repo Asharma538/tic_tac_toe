@@ -200,5 +200,5 @@ function toggle(a){
         }
     }
     main();
-    console.log(classFilled);
+    // console.log(classFilled);
 }
