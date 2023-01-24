@@ -15,6 +15,11 @@ function reinitiate(){
     classFilled = [[-1,-1,-1],[-1,-1,-1],[-1,-1,-1]];
     i = 0;
 }
+function restart(){
+    document.getElementsByClassName("w1")[0].innerText = 0;
+    document.getElementsByClassName("w2")[0].innerText = 0;
+    reinitiate();
+}
 
 function winner(){
     if(
