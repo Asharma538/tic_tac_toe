@@ -52,9 +52,9 @@ function main(){
     if ( i<9 || a==1 || a==0 ){
         if (a==0){
             document.getElementById("wonWho").innerText = "Player-1 Won ! ";
+            document.getElementById("rabbie").src = "./Images/winner_gid.gif";
             document.getElementsByClassName("gif")[0].classList.toggle("invisible");
             document.getElementById("tic-tac-toe").classList.toggle("invisible");
-            document.getElementById("rabbie").src = "/Images/winner_gid.gif";
             setTimeout(hide_func1,4000);
             function hide_func1() {
                 document.getElementById("tic-tac-toe").classList.toggle("invisible");
@@ -68,9 +68,9 @@ function main(){
         }
         else if (a==1){
             document.getElementById("wonWho").innerText = "Player-2 Won !";
+            document.getElementById("rabbie").src = "./Images/winner_gid.gif";
             document.getElementsByClassName("gif")[0].classList.toggle("invisible");
             document.getElementById("tic-tac-toe").classList.toggle("invisible");
-            document.getElementById("rabbie").src = "/Images/winner_gid.gif";
             setTimeout(hide_func2,4000);
             function hide_func2() {
                 document.getElementById("tic-tac-toe").classList.toggle("invisible");
@@ -85,9 +85,9 @@ function main(){
     }
     else{
         document.getElementById("wonWho").innerText = "Match draw !";
+        document.getElementById("rabbie").src = "/Images/draw_gif.png";
         document.getElementsByClassName("gif")[0].classList.toggle("invisible");
         document.getElementById("tic-tac-toe").classList.toggle("invisible");
-        document.getElementById("rabbie").src = "/Images/draw_gif.png";
         setTimeout(hide_func3,4000);
             function hide_func3() {
                 document.getElementById("tic-tac-toe").classList.toggle("invisible");
