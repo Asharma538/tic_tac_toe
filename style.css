@@ -2,7 +2,7 @@
     margin: 0px;
 }
 body {
-    background-image: url(/Images/Blocks.jpeg);
+    background-image: url(./Images/Blocks.jpeg);
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -134,7 +134,7 @@ button{
     background: none;
 }
 .x{
-    background-image:url(/Images/X.png);
+    background-image:url(./Images/X.png);
     background-repeat: no-repeat;
     width: 100px;
     height: 100px;
@@ -143,7 +143,7 @@ button{
     background-position-y: center;
 }
 .o{
-    background-image:url(/Images/O.png);
+    background-image:url(./Images/O.png);
     background-repeat: no-repeat;
     width: 100px;
     height: 100px;
@@ -182,7 +182,7 @@ button{
     border-radius: 50%;
     width:  48px;
     height: 48px;
-    background-image: url(/Images/restrt.png);
+    background-image: url(./Images/restrt.png);
     background-size: 100%;    
 }
 .reiniBtn{
@@ -194,7 +194,7 @@ button{
     border-radius: 50%;
     width:  48px;
     height: 48px;
-    background-image: url(/Images/restart.png);
+    background-image: url(./Images/restart.png);
     background-size: 100%;
 }
 .reiniBtn:active{
